@@ -27,6 +27,7 @@
         <h1>My Work</h1>
     </main>
 
+<!-- TODO add projects to project files and improve look and add content. -->
     <div class="container mt-4">
         <div class="row">
             <!-- Sidebar Menu -->

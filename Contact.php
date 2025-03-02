@@ -22,6 +22,7 @@
 <body>
 <?php include 'Formatting/header.php'; ?>
    
+<!-- TODO Add contact details another photo bit extra info -->
 
 <?php include 'Formatting/footer.php'; ?>
 

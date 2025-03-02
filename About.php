@@ -21,6 +21,7 @@
     <script src="https://kit.fontawesome.com/4a263b5a4b.js" crossorigin="anonymous"></script>
 </head>
 
+<!-- TODO add more content from cv and about plus styling for more profesional look -->
 <body>
     <?php include 'Formatting/header.php'; ?>
 
@@ -46,10 +47,6 @@
             </div>
         </div>
     </div>
-
-
-
-
     <?php include 'Formatting/footer.php'; ?>
 
     <!-- Bootstrap Bundle (Ensure It’s At the End) -->
