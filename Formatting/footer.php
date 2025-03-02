@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome for Icons -->
-    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4a263b5a4b.js" crossorigin="anonymous"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="stylesheet.css"> 
 </head>
@@ -17,9 +17,10 @@
         <div class="container">
             <p class="mb-1">&copy; 2025 Sonny Bell. All Rights Reserved.</p>
             <div>
-                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/Dualboi" class="text-white me-3"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sonny-bell-160108201/" class="text-white me-3"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                
             </div>
         </div>
     </footer>

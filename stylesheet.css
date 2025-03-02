@@ -1,3 +1,102 @@
+/* 
+Main styling doc
+
+
+colour scheme as follows
+
+Canvas, main body
+ #EDF0EC 
+
+Card, UI, sub ui and menu's
+ #F5F6F4 
+
+Accent Non-Content Baseline
+ #7E9379 
+
+Accent Content Baseline
+ #5D7756 
+
+Accent Content Strong
+ #42543D 
+
+Accent Content Subdued
+ rgba(66, 84, 61, 0.796) 
+
+Accent Non-Content Strong
+ #5E6E5A 
+
+Neutral Non-Content Strong
+ #30332f 
+
+Neutral Content Strong
+ #222521 
+*/
+
+/* 
+Global styling
+*/
+body {
+    background-color:  #EDF0EC !important;
+}
+
 .navbar-custom {
-    background-color: #496742 !important;
+    background-color:  #496742  !important;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*
+Index styling
+*/
+.project-link{
+    text-decoration: none !important;
+    color: #222521 !important;
+}
+
+.text-primary{
+    color: #222521 !important;
+}
+
+ /* Smooth Hover Effect for Menu */
+ .list-group-item {
+    transition: 0.3s ease-in-out;
+    background-color: #F5F6F4;
+}
+.list-group-item:hover {
+    background-color: #EDF0EC;
+    color:  #F5F6F4 ;
+    cursor: pointer;
+
+}
+
+/* Content area animation */
+#project-content {
+    min-height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background:  #F5F6F4 ;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    margin-bottom: 5%;
+}
+
+/*
+About page styling
+*/
+
+.profile-image {
+    width: 25vw; /* 25% of viewport width */
+    height: 25vw; /* Maintain a square ratio */
+    object-fit: cover; /* Crop the image to fit */
+    border-radius: 50%; /* Makes it circular */
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.bold-text {
+    font-weight: bold;
 }
