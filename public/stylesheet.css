@@ -37,21 +37,113 @@ Global styling
 */
 body {
     background-color:  #EDF0EC !important;
+    color:  #222521 ;
 }
 
 .navbar-custom {
     background-color:  #496742  !important;
 }
 
-footer{
-    position: fixed;
+.navbar-brand,.nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-brand {
+    font-family: "Playwrite IT Moderna", sans-serif;
+}
+
+.navbar-brand::after {
+    content: '';
+    position: absolute;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    width: 0;
+    height: 2px; /* Adjust thickness of the underline */
+    background-color: #EDF0EC; /* Underline color */
+    transition: width 0.3s ease; /* Transition for left-to-right effect */
+}
+
+.navbar-brand:hover::after {
+    width: 100%; /* Expand the width to full on hover */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Adjust thickness of the underline */
+    background-color: #EDF0EC; /* Underline color */
+    transition: width 0.3s ease; /* Transition for left-to-right effect */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Expand the width to full on hover */
+}
+
+/*
+about intro styling
+*/
+
+.about-intro{
+margin-top: 5%;
+}
+
+/* 
+About tech styling
+*/
+.tech-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 15%;
+}
+
+.tech-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.tech-row span {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.tech-row span:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+.tools-frameworks-header{
+    margin-top: 6%;
 }
 
 /*
 Index styling
 */
+
+/*
+
+project styling
+*/
+
+.my-projects-header{
+    margin-bottom: 3%;
+}
 
 .project-link{
     text-decoration: none !important;
@@ -62,17 +154,21 @@ Index styling
     color: #222521 !important;
 }
 
- /* Smooth Hover Effect for Menu */
- .list-group-item {
-    transition: 0.3s ease-in-out;
+/* Smooth Hover Effect for Menu */
+.list-group-item {
+    transition: all 0.3s ease-in-out;
     background-color: #F5F6F4;
+    border: none; /* Remove border to prevent shifting */
+    box-shadow: none;
 }
+
 .list-group-item:hover {
     background-color: #EDF0EC;
-    color:  #F5F6F4 ;
+    color: #222521;
     cursor: pointer;
-
+    box-shadow: inset 0 0 0 2px #222521; /* Simulates a border without affecting layout */
 }
+
 
 /* Content area animation */
 #project-content {
@@ -83,6 +179,10 @@ Index styling
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 5%;
     margin-bottom: 5%;
+}
+
+.project-container{
+    margin-top: 10% !important;
 }
 
 /*
@@ -100,4 +200,13 @@ About page styling
 
 .bold-text {
     font-weight: bold;
+    color: #496742
+}
+
+.skills-list{
+    list-style-type: none;
+}
+.skills-list li {
+    font-size: 1.05rem;
+    margin-bottom: 3%;
 }
