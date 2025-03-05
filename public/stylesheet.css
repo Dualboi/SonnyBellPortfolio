@@ -39,6 +39,18 @@ body {
     background-color:  #EDF0EC !important;
     color:  #222521 ;
 }
+html {
+    scroll-behavior: smooth;
+}
+::-moz-selection { /* Code for Firefox */
+    color: #F5F6F4;
+    background: #5E6E5A;
+  }
+  
+  ::selection {
+    color: #F5F6F4;
+    background: #5E6E5A;
+  }
 
 .navbar-custom {
     background-color:  #496742  !important;
