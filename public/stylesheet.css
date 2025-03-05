@@ -223,3 +223,10 @@ About page styling
     font-size: 1.05rem;
     margin-bottom: 3%;
 }
+
+/*
+contact styling
+*/
+.contact-header{
+    margin-top: 15%;
+}
