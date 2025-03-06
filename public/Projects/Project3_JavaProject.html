@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,50 @@
     <!-- Bootstrap & Animate.css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="stylesheet.css"> 
+    <link rel="stylesheet" href="stylesheet.css">
 
     <!-- jQuery (Ensure Correct Syntax) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+
     <!-- JavaScript for Project Menu -->
     <script src="Scripts/projectMenu.js"></script>
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/4a263b5a4b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1> Java Project</h1>
+    <div class="container mt-4 content-container-img">
+        <div class="d-flex justify-content-between align-items-start">
+            <h1 class="flex-grow-1">Java Server chat room Application</h1>
+            <img src="Media/java_icon.png" alt="Logo for the programming language Java" class="logo-img">
+        </div>
+
+        <p>This is a university project that is currently in development. Once completed, the application will include
+            the following features:</p>
+        
+        <ul class="no-bullets">
+            <li>Username creation, allowing others to see their messages associated with that name.</li>
+            <li>Be able to message other active clients on the server.</li>
+            <li>View messages sent by other clients on the server.</li>
+        </ul>
+        
+        <p>The application will also include an admin interface that allows administrators to:</p>
+        
+        <ul class="no-bullets">
+            <li> Start and stop the server application.</li>
+            <li>Specify the port on which the server runs.</li>
+            <li>Access a log file of server activity.</li>
+            <li>View a web page displaying a list of currently connected users.</li>
+        </ul>
+        
 
 
-<!-- Bootstrap Bundle (Ensure It’s At the End) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <img src="Media/server_img.jpg" alt="Image of a server room" class="bottom-image">
+    </div>
+
+    <!-- Bootstrap Bundle (Ensure It’s At the End) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

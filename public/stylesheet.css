@@ -264,3 +264,18 @@ experience_1 styling
 /* 
 experience_2 styling
 */
+
+/*
+Project 3 styling
+*/
+/* Styling for lists with no bullets but indented items */
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 20px; /* Indent list items */
+}
+
+ul.no-bullets li {
+    margin-bottom: 5px; /* Optional: adds space between list items */
+    font-size: 16px; /* Customize font size */
+}
+
