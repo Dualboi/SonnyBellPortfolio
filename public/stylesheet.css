@@ -156,7 +156,16 @@ project styling
     color: #222521 !important;
 }
 
-.project-link {
+.project-link{
+    text-decoration: none !important;
+    color: #F5F6F4 !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.list-group-item:hover .experience-link {
+    color: #222521 !important;
+}
+.experience-link {
     text-decoration: none !important;
     color: #F5F6F4 !important;
     transition: color 0.3s ease-in-out;
@@ -184,7 +193,7 @@ project styling
 
 
 /* Content area animation */
-#project-content {
+#project-content , #experience-content{
     min-height: 300px;
     padding: 20px;
     border-radius: 10px;
@@ -194,7 +203,7 @@ project styling
     margin-bottom: 5%;
 }
 
-.project-container{
+.project-container, .experience-container{
     margin-top: 20% !important;
 }
 
@@ -230,3 +239,28 @@ contact styling
 .contact-header{
     margin-top: 15%;
 }
+
+
+/*
+experience_1 styling
+*/
+.content-container-img{
+    padding: 5%;
+    border-radius: 10px;
+}
+.logo-img {
+    max-width: 20%; /* Scales dynamically */
+    border-radius: 10px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    height: auto;
+}
+.bottom-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 
+experience_2 styling
+*/
