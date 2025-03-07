@@ -1,53 +1,59 @@
 $(document).ready(function () {
-    // Handle project selection
-    $(".project-link").click(function (e) {
-        e.preventDefault();
+    let firstProjectLoaded = false;
+    let firstExperienceLoaded = false;
 
-        var project = $(this).data("project");
-        console.log("Loading project:", project);
+    function loadDefaultContent(container, selector, dataAttr, firstLoadFlag) {
+        if (!firstLoadFlag) {
+            let defaultItem = $(selector).first();
+            if (defaultItem.length > 0) {
+                let defaultData = defaultItem.data(dataAttr);
+                console.log("Auto-loading default:", defaultData);
 
-        if ($("#project-content").data("current") === project) {
-            console.log("Project already loaded, skipping...");
-            return;
+                $(container).data("current", defaultData);
+                $(container).load(defaultData);
+            }
+            return true; // Mark as loaded
         }
+        return firstLoadFlag;
+    }
 
-        $("#project-content").data("current", project);
-        $("#project-content").html('<div class="text-center text-muted"><p>Loading...</p></div>');
+    function handleSelection(container, selector, dataAttr) {
+        $(selector).click(function (e) {
+            e.preventDefault();
 
-        $("#project-content").fadeOut(200, function () {
-            $("#project-content").load(project, function (response, status, xhr) {
-                if (status === "error") {
-                    $("#project-content").html('<div class="text-danger"><p>Error loading content. Please try again.</p></div>');
-                    console.error("Error loading:", project, xhr.statusText);
-                }
-                $("#project-content").fadeIn(200);
+            let newContent = $(this).data(dataAttr);
+            let currentContent = $(container).data("current");
+
+            if (currentContent === newContent) {
+                console.log("Content already loaded, skipping...");
+                return;
+            }
+
+            $(container).data("current", newContent);
+            $(container).fadeOut(150, function () {
+                $(container).load(newContent, function (response, status, xhr) {
+                    if (status === "error") {
+                        $(container).html('<div class="text-danger"><p>Error loading content. Please try again.</p></div>');
+                        console.error("Error loading:", newContent, xhr.statusText);
+                    }
+                    $(container).fadeIn(150);
+                });
             });
         });
-    });
+    }
 
-    // Handle experience selection
-    $(".experience-link").click(function (e) {
-        e.preventDefault();
+    // Load default content only once when the page loads
+    if (!sessionStorage.getItem("projectLoaded")) {
+        firstProjectLoaded = loadDefaultContent("#project-content", ".project-link", "project", firstProjectLoaded);
+        sessionStorage.setItem("projectLoaded", "true");
+    }
 
-        var experience = $(this).data("experience"); // FIXED: Use correct attribute
-        console.log("Loading experience:", experience);
+    if (!sessionStorage.getItem("experienceLoaded")) {
+        firstExperienceLoaded = loadDefaultContent("#experience-content", ".experience-link", "experience", firstExperienceLoaded);
+        sessionStorage.setItem("experienceLoaded", "true");
+    }
 
-        if ($("#experience-content").data("current") === experience) {
-            console.log("Experience already loaded, skipping...");
-            return;
-        }
-
-        $("#experience-content").data("current", experience);
-        $("#experience-content").html('<div class="text-center text-muted"><p>Loading...</p></div>');
-
-        $("#experience-content").fadeOut(200, function () {
-            $("#experience-content").load(experience, function (response, status, xhr) {
-                if (status === "error") {
-                    $("#experience-content").html('<div class="text-danger"><p>Error loading content. Please try again.</p></div>');
-                    console.error("Error loading:", experience, xhr.statusText);
-                }
-                $("#experience-content").fadeIn(200);
-            });
-        });
-    });
+    // Handle menu selection changes
+    handleSelection("#project-content", ".project-link", "project");
+    handleSelection("#experience-content", ".experience-link", "experience");
 });

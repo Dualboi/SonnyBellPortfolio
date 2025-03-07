@@ -212,10 +212,8 @@ project styling
 About page styling
 */
 .profile-image {
-    width: 25vw; /* 25% of viewport width */
-    height: 25vw; /* Maintain a square ratio */
     object-fit: cover; /* Crop the image to fit */
-    border-radius: 50%; /* Makes it circular */
+    border-radius: 15px;
     margin-top: 10%;
     margin-bottom: 10%;
 }
