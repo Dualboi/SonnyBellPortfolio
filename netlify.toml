@@ -1,4 +1,4 @@
 [build]
-  base = "public\index_loading page.html"            # Set to "" if your index.html is in root
+  base = "index_loading page.html"            # Set to "" if your index.html is in root
   publish = "public"   # Change to "build" or "dist" if using a framework
   command = ""         # If no build command is needed, leave blank
