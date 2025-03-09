@@ -20,6 +20,20 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/4a263b5a4b.js" crossorigin="anonymous"></script>
 
+    <style>
+        /* Initially hide the body */
+        body {
+            display: none;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            // Fade in the entire body over 1.5 seconds
+            $("body").fadeIn(2000);
+        });
+    </script>
+
 </head>
 
 <body>
@@ -132,7 +146,7 @@
 
     <div class="container col-12">
         <h3 class="text-center contact-header" id="contact">Get in contact </h3>
-
+        
     </div>
 
     <div id="footer-container"></div> <!-- Placeholder for Footer -->
