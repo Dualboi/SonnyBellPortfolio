@@ -185,7 +185,6 @@ project styling
     margin:0.5%;
     box-shadow: none;
     margin-bottom: 10px; /* Adds spacing between list items */
-    border-radius: 5px; /* Makes the corners rounded, like a button */
 }
 
 .list-group-item:hover {
@@ -193,8 +192,6 @@ project styling
     cursor: pointer;
     box-shadow: none; /* No shadow needed here, keeps it clean */
 }
-
-
 
 
 
