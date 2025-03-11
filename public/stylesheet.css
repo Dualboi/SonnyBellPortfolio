@@ -293,6 +293,38 @@ contact styling
     border-radius: 5%;
 }
 
+.icon-link {
+    position: relative;
+    display: inline-block;
+    color: #496742; /* Icon color */
+    text-decoration: none; /* Remove default underline */
+}
+
+.icon-link i {
+    transition: color 0.3s ease;
+}
+
+/* Underline Effect */
+.icon-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust for spacing */
+    left: 0;
+    width: 0;
+    height: 2px; /* Thickness of underline */
+    background-color: #222521; /* Underline color */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+.icon-link:hover i {
+    color: #222521; /* Change icon color on hover */
+}
+
+.icon-link:hover::after {
+    width: 100%; /* Expand underline to full width */
+}
+
+
 /* HTML: <div class="loader"></div> */
 .loader {
     width: 120px;
