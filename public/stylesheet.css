@@ -280,30 +280,18 @@ ul.no-bullets li {
     font-size: 16px; /* Customize font size */
 }
 
-/* HTML: <div class="loader"></div> */
-/*
-.loader {
-    width: 120px;
-    height: 22px;
-    border-radius: 20px;
-    color: #514b82;
-    border: 2px solid;
-    position: relative;
-  }
-  .loader::before {
-    content: "";
-    position: absolute;
-    margin: 2px;
-    inset: 0 100% 0 0;
-    border-radius: inherit;
-    background: currentColor;
-    animation: l6 2s infinite;
-  }
-  @keyframes l6 {
-      100% {inset:0}
-  }
-  */
-
+/* 
+contact styling
+*/
+.contact-container{
+    margin-bottom: 10%;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background:  #F5F6F4 ;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+}
 
 /* HTML: <div class="loader"></div> */
 .loader {
