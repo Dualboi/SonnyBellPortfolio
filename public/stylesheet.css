@@ -155,13 +155,13 @@ project styling
 
 /* Primary text color */
 .text-primary {
-    color: #222521 !important;
+    color: #EDF0EC !important;
 }
 
 /* List group items (the clickable buttons) */
 .list-group-item {
     transition: all 0.3s ease-in-out;
-    background-color: #5E6E5A;
+    background-color: #496742;
     border: 2px solid #222521 !important;
     margin: 0.5%;
     margin-bottom: 10px;
