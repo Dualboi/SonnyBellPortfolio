@@ -148,50 +148,40 @@ i {
 project styling
 */
 
-.my-projects-header{
+/* Header */
+.my-projects-header {
     margin-bottom: 3%;
 }
 
-.text-primary{
+/* Primary text color */
+.text-primary {
     color: #222521 !important;
 }
 
-.project-link {
-    text-decoration: none !important;
-    color: #F5F6F4 !important;
-    transition: color 0.3s ease-in-out;
-}
-
-.list-group-item:hover .experience-link {
-    color: #222521 !important;
-}
-
-.experience-link {
-    text-decoration: none !important;
-    color: #F5F6F4 !important;
-    transition: color 0.3s ease-in-out;
-}
-
-/* Ensure text changes color when the entire list item is hovered */
-.list-group-item:hover .project-link {
-    color: #222521 !important;
-}
-
-/* Menu item always has a border with color #222521 */
+/* List group items (the clickable buttons) */
 .list-group-item {
     transition: all 0.3s ease-in-out;
     background-color: #5E6E5A;
-    border: 2px solid #222521 !important; /* Always have the border with the desired color */
-    margin:0.5%;
-    box-shadow: none;
-    margin-bottom: 10px; /* Adds spacing between list items */
+    border: 2px solid #222521 !important;
+    margin: 0.5%;
+    margin-bottom: 10px;
+    color: #F5F6F4; /* Light text */
 }
 
+/* Hover effect for entire button and text */
 .list-group-item:hover {
-    background-color: #EDF0EC;
+    background-color: #EDF0EC; /* Light green background */
+    color: #222521 !important; /* Dark text on hover */
     cursor: pointer;
-    box-shadow: none; /* No shadow needed here, keeps it clean */
 }
+
+/* Remove old styles for links */
+.project-link,
+.experience-link {
+    text-decoration: none !important;
+    color: inherit !important; /* Inherit from parent li */
+}
+
 
 
 
