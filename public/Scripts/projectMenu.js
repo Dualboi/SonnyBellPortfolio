@@ -17,30 +17,29 @@ $(document).ready(function () {
         return firstLoadFlag;
     }
 
-    function handleSelection(container, selector, dataAttr) {
-        $(selector).click(function (e) {
-            e.preventDefault();
+   function handleSelection(container, selector, dataAttr) {
+    $(selector).click(function () {
+        let newContent = $(this).data(dataAttr);
+        let currentContent = $(container).data("current");
 
-            let newContent = $(this).data(dataAttr);
-            let currentContent = $(container).data("current");
+        if (currentContent === newContent) {
+            console.log("Content already loaded, skipping...");
+            return;
+        }
 
-            if (currentContent === newContent) {
-                console.log("Content already loaded, skipping...");
-                return;
-            }
-
-            $(container).data("current", newContent);
-            $(container).fadeOut(150, function () {
-                $(container).load(newContent, function (response, status, xhr) {
-                    if (status === "error") {
-                        $(container).html('<div class="text-danger"><p>Error loading content. Please try again.</p></div>');
-                        console.error("Error loading:", newContent, xhr.statusText);
-                    }
-                    $(container).fadeIn(150);
-                });
+        $(container).data("current", newContent);
+        $(container).fadeOut(150, function () {
+            $(container).load(newContent, function (response, status, xhr) {
+                if (status === "error") {
+                    $(container).html('<div class="text-danger"><p>Error loading content. Please try again.</p></div>');
+                    console.error("Error loading:", newContent, xhr.statusText);
+                }
+                $(container).fadeIn(150);
             });
         });
-    }
+    });
+}
+
 
     // Load default content only once when the page loads
     if (!sessionStorage.getItem("projectLoaded")) {
