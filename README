@@ -1,12 +1,12 @@
-# 📁 Portfolio Showcase
+# Portfolio Showcase
 
-This project is designed to present my portfolio in a clean, professional format — while also demonstrating my **design** and **development** skills.
+This project presents my portfolio in a clean, professional format, demonstrating my **design** and **development** skills.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a3a80fd8-9522-49db-b693-5346b2b5bb52/deploy-status)](https://app.netlify.com/sites/sonnybell/deploys)
 
 ---
 
-## ✅ Features
+## Features
 
 - Interactive project and experience selection
 - Dynamic content loading with jQuery
@@ -15,7 +15,7 @@ This project is designed to present my portfolio in a clean, professional format
 
 ---
 
-## 🔧 To-Do List
+## To-Do List
 
 - [ ] Fix reload issue (default content not loading)
 - [ ] Add Java project
@@ -25,7 +25,7 @@ This project is designed to present my portfolio in a clean, professional format
 
 ---
 
-## 🌐 Live Site
+## Live Site
 
-🔗 [Visit the live portfolio](https://sonnybell.netlify.app) <!-- Replace with your actual link if needed -->
+🔗 [Visit the live portfolio](https://sonnybell.netlify.app)
 
