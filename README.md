@@ -27,5 +27,5 @@ This project presents my portfolio in a clean, professional format, demonstratin
 
 ## Live Site
 
-🔗 [Visit the live portfolio](https://sonnybell.netlify.app)
+[Visit the live portfolio](https://sonnybell.netlify.app)
 
