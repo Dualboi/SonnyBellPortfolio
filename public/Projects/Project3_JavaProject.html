@@ -31,26 +31,50 @@
         </div>
 
         <!-- Intro to the project -->
-        <p>This is a university project that is currently in development. Once completed, the application will include
-            the following features:</p>
+        <p>This completed university project is a Java-based chat application featuring both client and administrator
+            interfaces, inspired by platforms like Discord. It is designed to support real-time communication across a
+            centralised, multithreaded server environment.</p>
 
         <!-- Description of the project in detail -->
         <ul class="">
-            <li>Username creation, allowing others to see their messages associated with that name.</li>
-            <li>Be able to message other active clients on the server.</li>
-            <li>View messages sent by other clients on the server.</li>
+            <li>Allows users to create usernames, enabling message attribution and identity tracking.</li>
+            <li>Displays messages from other users in real time, facilitating group discussions.</li>
+            <li>Handles multiple users simultaneously using Java multithreading for stable and responsive communication.
+            </li>
+            <li> Makes use of custom made APIs and a REST API for server communication from terminal, web and GUI.</li>
         </ul>
 
-        <!-- New descritpion header -->
-        <p>The application will also include an admin interface that allows administrators to:</p>
+        <!-- New description header -->
+        <p>The web administrator interface provides key server-side control features:</p>
 
         <!-- Description of the project in detail -->
         <ul class="">
-            <li> Start and stop the server application.</li>
-            <li>Specify the port on which the server runs.</li>
-            <li>Access a log file of server activity.</li>
-            <li>View a web page displaying a list of currently connected users.</li>
+            <li>Start and stop the server via command line.</li>
+            <li>Manually configure the server port as required during initial setup.</li>
+            <li>Set an admin password at server launch to secure privileged controls and restrict unauthorised access.
+            </li>
+            <li>Access and monitor a real-time server activity log.</li>
+            <li>Display currently connected users via a built-in web interface.</li>
+            <li>Send messages to all connected users, allowing for announcements or important updates.</li>
+            <li>Kick or ban users from the server, providing control over user behaviour and maintaining from the admin
+                web page
         </ul>
+
+        <!-- New description header -->
+        <p>Client-side functionality and graphical interface:</p>
+
+        <!-- Description of the project in detail -->
+        <ul class="">
+            <li>A modern JavaFX GUI client provides a user-friendly experience similar to native applications.</li>
+            <li>Supports launching via GUI (run-gui.bat) or command line for flexibility.</li>
+            <li>Users can connect to the server, chat, and execute commands such as <code>/help</code> or
+                <code>quit</code>.
+            </li>
+            <li> A interactive multiplayer game started by a command in the chat room with score keeping</li>
+        </ul>
+
+        <!-- New description header -->
+        <p>Getting started and usage:</p>
 
         <!-- Main project image -->
         <img src="Media/server_img.jpg" alt="Image of a server room" class="bottom-image">
