@@ -144,25 +144,41 @@ i {
     margin-top: 6%;
 }
 
+/* 
+Certification styling 
+*/
+.Certification-row span {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    position: relative; /* Needed for hover effect */
+}
+
 .Credly {
     text-decoration: none;
     color: #222521;
+    position: relative; /* Make underline relative to this element */
 }
 
-.Credly:after{
+.Credly::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -2px; /* Slightly below the text */
     left: 0;
     width: 0;
-    height: 2px; /* Adjust thickness of the underline */
-    background-color: #496742; /* Underline color */
-    transition: width 0.3s ease; /* Transition for left-to-right effect */
+    height: 2px;
+    background-color: #496742;
+    transition: width 0.3s ease;
 }
 
 .Credly:hover::after {
-    width: 100%; /* Expand the width to full on hover */
+    width: 100%;
 }
+
 
 /*
 project styling
