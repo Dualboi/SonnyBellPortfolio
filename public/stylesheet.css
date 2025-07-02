@@ -146,6 +146,7 @@ i {
 
 .Credly {
     text-decoration: none;
+    color: #222521;
 }
 
 .Credly:after{
@@ -155,7 +156,7 @@ i {
     left: 0;
     width: 0;
     height: 2px; /* Adjust thickness of the underline */
-    background-color: #EDF0EC; /* Underline color */
+    background-color: #496742; /* Underline color */
     transition: width 0.3s ease; /* Transition for left-to-right effect */
 }
 
