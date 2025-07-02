@@ -148,6 +148,21 @@ i {
     text-decoration: none;
 }
 
+.Credly:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Adjust thickness of the underline */
+    background-color: #EDF0EC; /* Underline color */
+    transition: width 0.3s ease; /* Transition for left-to-right effect */
+}
+
+.Credly:hover::after {
+    width: 100%; /* Expand the width to full on hover */
+}
+
 /*
 project styling
 */
