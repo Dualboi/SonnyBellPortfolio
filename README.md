@@ -18,7 +18,6 @@ This project presents my portfolio in a clean, professional format, demonstratin
 ## To-Do List
 
 - [ ] Fix reload issue (default content not loading when page refreshed)
-- [ ] Add certifications (with verified link)
 - [ ] Add research paper section
 
 ---
